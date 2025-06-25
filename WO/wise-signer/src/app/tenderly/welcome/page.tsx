@@ -272,7 +272,7 @@ export default function WelcomePage() {
         // If navigating, show loading
         if (isNavigating) {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <h2 className="text-2xl font-semibold mb-4">Loading Challenge...</h2>
                     <div className="w-full bg-zinc-700 rounded-full h-2.5">
                         <div
@@ -292,7 +292,7 @@ export default function WelcomePage() {
         // If we already have network info saved
         if (networkInfo && setupStage === "initial") {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg">
+                <div className="p-6 rounded-lg" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <h2 className="text-2xl font-semibold mb-4">Welcome Back!</h2>
                     <p className="mb-6">We found a saved Tenderly Network configuration. Would you like to:</p>
 
@@ -319,7 +319,7 @@ export default function WelcomePage() {
         // Initial option selection screen
         if (setupStage === "initial" && !setupOption) {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <h2 className="text-2xl font-semibold mb-6">Tenderly Network Setup</h2>
                     <p className="mb-8">
                         To use the Ethereum transaction practice environment, you need a Tenderly Virtual Network.
@@ -372,7 +372,7 @@ export default function WelcomePage() {
         // Form for entering existing endpoint
         if (setupStage === "initial" && setupOption === "existing") {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <button
                         onClick={resetSetup}
                         className="text-zinc-400 hover:text-zinc-300 flex items-center gap-1 text-sm mb-4 cursor-pointer"
@@ -438,7 +438,7 @@ export default function WelcomePage() {
         // Form for creating a new network
         if (setupStage === "initial" && setupOption === "create") {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <button
                         onClick={resetSetup}
                         className="text-zinc-400 hover:text-zinc-300 flex items-center gap-1 text-sm mb-4 cursor-pointer"
@@ -571,7 +571,7 @@ export default function WelcomePage() {
         // Creating network in progress
         if (setupStage === "creating") {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <h2 className="text-2xl font-semibold mb-4">Creating Your Network</h2>
 
                     <div className="mb-6">
@@ -596,7 +596,7 @@ export default function WelcomePage() {
         // Setup complete - display network info
         if (setupStage === "complete" && networkInfo) {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <h2 className="text-2xl font-semibold mb-4">Setup Complete!</h2>
 
                     <div className="mb-6 p-4 bg-zinc-700 rounded">
@@ -643,7 +643,7 @@ export default function WelcomePage() {
         // Setup error
         if (setupStage === "error") {
             return (
-                <div className="bg-zinc-800 p-6 rounded-lg max-w-2xl">
+                <div className="p-6 rounded-lg max-w-2xl" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                     <h2 className="text-2xl font-semibold mb-4">Setup Error</h2>
 
                     <div className="p-4 bg-red-900/30 border border-red-800 rounded text-red-200 mb-6">
