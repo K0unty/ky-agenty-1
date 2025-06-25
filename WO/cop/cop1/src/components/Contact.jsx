@@ -1,9 +1,7 @@
-import React from 'react';
-
 const Contact = () => (
   <section aria-labelledby="contact-heading" className="cv-section">
     <h2 id="contact-heading">Contact</h2>
-    <form className="contact-form" onSubmit={e => e.preventDefault()}>
+    <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="name">Name</label>
       <input id="name" name="name" type="text" required />
       <label htmlFor="email">Email</label>
@@ -13,6 +11,6 @@ const Contact = () => (
       <button type="submit">Send</button>
     </form>
   </section>
-);
+)
 
-export default Contact;
+export default Contact

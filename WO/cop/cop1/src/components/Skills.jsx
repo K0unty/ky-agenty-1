@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Skills = () => (
   <section aria-labelledby="skills-heading" className="cv-section">
     <h2 id="skills-heading">Skills</h2>
@@ -13,6 +11,6 @@ const Skills = () => (
       <li>Unit Testing</li>
     </ul>
   </section>
-);
+)
 
-export default Skills;
+export default Skills

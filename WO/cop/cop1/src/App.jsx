@@ -9,8 +9,9 @@ function App() {
   return (
     <main className="cv-container">
       <header>
-        <h1>Jane Doe</h1>
+        <h1>Panty Smellerz</h1>
         <p>Senior Developer</p>
+        <p>bootysmeller@gmail.com</p>
       </header>
       <PersonalInfo />
       <Experience />

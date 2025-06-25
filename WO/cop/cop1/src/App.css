@@ -42,7 +42,7 @@
 }
 
 body {
-  font-family: 'Orbitron', 'Share Tech Mono', 'Segoe UI', Arial, sans-serif;
+  font-family: "Orbitron", "Share Tech Mono", "Segoe UI", Arial, sans-serif;
   background: linear-gradient(135deg, #1a0033 0%, #3a0ca3 50%, #7209b7 100%);
   color: #f8f8ff;
   margin: 0;
@@ -51,18 +51,33 @@ body {
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
-  background: repeating-linear-gradient(120deg, rgba(255,0,255,0.07) 0 2px, transparent 2px 40px),
-    repeating-linear-gradient(60deg, rgba(0,255,255,0.07) 0 2px, transparent 2px 40px);
+  background: repeating-linear-gradient(
+      120deg,
+      rgba(255, 0, 255, 0.07) 0 2px,
+      transparent 2px 40px
+    ),
+    repeating-linear-gradient(
+      60deg,
+      rgba(0, 255, 255, 0.07) 0 2px,
+      transparent 2px 40px
+    );
   animation: synthwave-bg 12s linear infinite;
 }
 
 @keyframes synthwave-bg {
-  0% { background-position: 0 0, 0 0; }
-  100% { background-position: 200px 400px, 400px 200px; }
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 200px 400px, 400px 200px;
+  }
 }
 
 .cv-container {
@@ -82,7 +97,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-family: "Orbitron", "Share Tech Mono", monospace;
   font-size: 2.5rem;
   letter-spacing: 0.1em;
   color: #ff00cc;
@@ -91,7 +106,7 @@ header h1 {
 
 header p {
   color: #00fff7;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   font-size: 1.2rem;
   margin-top: 0.5rem;
   text-shadow: 0 0 4px #00fff7;
@@ -99,7 +114,7 @@ header p {
 
 .cv-section h2 {
   color: #ff00cc;
-  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-family: "Orbitron", "Share Tech Mono", monospace;
   text-shadow: 0 0 6px #ff00cc, 0 0 2px #fff;
 }
 
@@ -110,11 +125,26 @@ header p {
 
 .cv-item {
   margin-bottom: 1.2rem;
-  background: rgba(58,12,163,0.18);
+  background: rgba(58, 12, 163, 0.18);
   border-left: 4px solid #00fff7;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
   box-shadow: 0 0 8px #00fff733;
+}
+
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 1em;
+  color: #00fff7;
+  margin-bottom: 0.5em;
+}
+
+.cv-dot {
+  font-size: 1.2em;
+  color: #ff00cc;
 }
 
 .skills-list {
@@ -131,7 +161,7 @@ header p {
   border-radius: 6px;
   padding: 0.4em 1em;
   font-size: 1em;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   box-shadow: 0 0 8px #ff00cc88;
   text-shadow: 0 0 2px #fff;
 }
@@ -151,7 +181,7 @@ header p {
   font-size: 1em;
   background: #1a0033;
   color: #fff;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   box-shadow: 0 0 4px #ff00cc44;
 }
 
@@ -169,7 +199,7 @@ header p {
   padding: 0.7em 1.2em;
   font-size: 1em;
   cursor: pointer;
-  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-family: "Orbitron", "Share Tech Mono", monospace;
   font-weight: bold;
   box-shadow: 0 0 8px #ff00cc88;
   transition: background 0.2s, color 0.2s;
@@ -187,7 +217,27 @@ header p {
   header h1 {
     font-size: 1.5rem;
   }
+  .cv-section {
+    margin-bottom: 1.2rem;
+  }
+  .cv-item {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.98em;
+  }
+  .cv-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+    font-size: 0.98em;
+  }
+  .skills-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
 }
 
 /* Import synthwave/techno fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap");

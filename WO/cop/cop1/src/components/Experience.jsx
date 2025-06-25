@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Experience = () => (
   <section aria-labelledby="experience-heading" className="cv-section">
     <h2 id="experience-heading">Experience</h2>
@@ -20,6 +18,6 @@ const Experience = () => (
       </ul>
     </div>
   </section>
-);
+)
 
-export default Experience;
+export default Experience
