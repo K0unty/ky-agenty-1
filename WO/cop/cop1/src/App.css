@@ -1,0 +1,193 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family: 'Orbitron', 'Share Tech Mono', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1a0033 0%, #3a0ca3 50%, #7209b7 100%);
+  color: #f8f8ff;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: repeating-linear-gradient(120deg, rgba(255,0,255,0.07) 0 2px, transparent 2px 40px),
+    repeating-linear-gradient(60deg, rgba(0,255,255,0.07) 0 2px, transparent 2px 40px);
+  animation: synthwave-bg 12s linear infinite;
+}
+
+@keyframes synthwave-bg {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 200px 400px, 400px 200px; }
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(20, 10, 40, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 0 32px 4px #ff00cc55, 0 0 8px 2px #00fff755;
+  padding: 2.5rem 2.5rem;
+  border: 2px solid #ff00cc;
+}
+
+header {
+  border-bottom: 2px solid #00fff7;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #ff00cc;
+  text-shadow: 0 0 8px #ff00cc, 0 0 2px #fff;
+}
+
+header p {
+  color: #00fff7;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 4px #00fff7;
+}
+
+.cv-section h2 {
+  color: #ff00cc;
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  text-shadow: 0 0 6px #ff00cc, 0 0 2px #fff;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.cv-item {
+  margin-bottom: 1.2rem;
+  background: rgba(58,12,163,0.18);
+  border-left: 4px solid #00fff7;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #00fff733;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+  color: #1a0033;
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-family: 'Share Tech Mono', monospace;
+  box-shadow: 0 0 8px #ff00cc88;
+  text-shadow: 0 0 2px #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5em;
+  border: 1px solid #ff00cc;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #1a0033;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  box-shadow: 0 0 4px #ff00cc44;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00fff7;
+  border-color: #00fff7;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+  color: #1a0033;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-weight: bold;
+  box-shadow: 0 0 8px #ff00cc88;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #00fff7 0%, #ff00cc 100%);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .cv-container {
+    padding: 1rem 0.5rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Import synthwave/techno fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap');
