@@ -41,6 +41,17 @@ const Header = styled(motion.header)`
     text-shadow: var(--text-glow);
     font-size: 3rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      word-wrap: break-word;
+    }
+  }
 `
 
 const Section = styled(motion.section)`
@@ -83,6 +94,7 @@ function App() {
         >
           <h2>About Me</h2>
           <p>Your bio here...</p>
+          <h2>Boot Smelling</h2>
         </Section>
 
         <Section
