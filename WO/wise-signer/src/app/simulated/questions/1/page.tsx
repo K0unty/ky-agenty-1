@@ -1,5 +1,11 @@
 "use client";
 
+import QuestionPage from "@/components/QuestionPage";
+
 export default function NumberedQuestionPage() {
-  return <div style={{ padding: 40, fontSize: 32 }}>hello</div>;
+  try {
+    return <QuestionPage questionId={1} />;
+  } catch (err) {
+    return <div style={{ color: "red", padding: 32 }}>Runtime error: {String(err)}</div>;
+  }
 }
