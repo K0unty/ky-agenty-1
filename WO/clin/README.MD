@@ -8,5 +8,6 @@
 
 # Diraz
 
-| Dir | Hwah |
-| :-: | :--: |
+|       Dir       |                                                               Hwah                                                                |
+| :-------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+| [`cl1`](./cl1/) | Made a cv website synthwave style. So far it looks good , and is simple to understand. Now that this works will try other mathods |
