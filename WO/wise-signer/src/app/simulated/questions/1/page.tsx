@@ -1,7 +1,5 @@
-"use client"
-
-import QuestionPage from "@/components/QuestionPage";
+"use client";
 
 export default function NumberedQuestionPage() {
-    return <QuestionPage questionId={1} />;
+  return <div style={{ padding: 40, fontSize: 32 }}>hello</div>;
 }

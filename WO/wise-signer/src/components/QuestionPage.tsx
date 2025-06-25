@@ -7,10 +7,11 @@ import { getQuestionById, getNextQuestionId, getPrevQuestionId } from "@/data/qu
 export default function QuestionPage({ questionId }: { questionId: number }) {
     // Get question data
     const question = getQuestionById(questionId);
+    console.log('Loaded question:', question);
 
     // Handle case where question doesn't exist
     if (!question) {
-        return notFound();
+        return <div style={{color: 'red', padding: 32}}>Error: Question data not found for id {questionId}. Check your questions.ts file.</div>;
     }
 
     // Get next and previous question IDs for navigation
