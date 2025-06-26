@@ -12,4 +12,4 @@
 | :---------------: | :-------------------------------------------------------------------------------------------------: |
 |  [`gaa`](./gaa/)  |                                 Google Agentic workflow tests here                                  |
 |  [`cop`](./cop/)  | Copilot agent - Note since codespaces has this with a good free tier , this will be preferred panty |
-| [`clin`](./clin/) |   Teting Cline. Note cline uses API and itself isnt a LLM provider, working with OpenRouterPanty    |
+| [`clin`](./clin/) |   Testing Cline. Note cline uses API and itself isnt a LLM provider, working with OpenRouterPanty   |
