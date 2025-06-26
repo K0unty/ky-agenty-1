@@ -14,3 +14,31 @@
 https://github.com/google-gemini/gemini-cli
 
 - Note this runs with npx and very very slow
+
+Installation
+
+```sh
+npx https://github.com/google-gemini/gemini-cli
+```
+
+- Note you will use bunx and see if that works
+- This CLI is very slow and not very good
+
+```sh
+bunx https://github.com/google-gemini/gemini-cli
+```
+
+- This seems to be one time execution
+
+Installing it globaly to run mutiple times
+
+```sh
+npm install -g @google/gemini-cli
+gemini
+```
+
+Your bun method
+
+```sh
+
+```
