@@ -12,7 +12,7 @@
 
 Make a react cv website
 
-1. Using bun tailwindcss and react
+1. Using bun tailwindcss and react vite
 2. Keep the structure very simple to edit and understand and moduler
 3. Make smooth subtle animations
 4. Theme is synthwave and synthwave fonts
