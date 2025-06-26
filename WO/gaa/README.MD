@@ -1,5 +1,6 @@
 1. [gaa](#gaa)
    1. [Google Gemini CLI](#google-gemini-cli)
+2. [Gemini Assist Vscode Extensio](#gemini-assist-vscode-extensio)
 
 # gaa
 
@@ -47,3 +48,9 @@ gemini
 - In vscode its very bad, slow and is asking for paid tier
 
 > Gemini CLI is useless, when trying ot use it with vscode abandon
+
+# Gemini Assist Vscode Extensio
+
+1. Fails to create files in the codespace
+2. Removed do not use
+3.
