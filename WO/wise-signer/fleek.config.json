@@ -1,9 +1,0 @@
-{
-  "sites": [
-    {
-      "slug": "old-kitchen-many",
-      "distDir": "out",
-      "buildCommand": "npm run build"
-    }
-  ]
-}
