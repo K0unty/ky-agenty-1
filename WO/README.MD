@@ -14,3 +14,4 @@
 |  [`cop`](./cop/)  | Copilot agent - Note since codespaces has this with a good free tier , this will be preferred panty |
 | [`clin`](./clin/) |   Testing Cline. Note cline uses API and itself isnt a LLM provider, working with OpenRouterPanty   |
 |  [`roo`](./roo/)  |             RooCode is like cline, which has agentic mode and can use several providers             |
+|  [`opc`](./opc/)  |                           OpenCode - Mentioned to be also good CLi tools                            |

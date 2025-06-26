@@ -26,3 +26,5 @@ Make a react cv website
 ## Regarding Gemini
 
 1. BastardFucker free version is shit, multiple problems withhitting limits
+2. Problem with roocode and gemini, sevearl issues with trying to get the ROoCode to wotht with the terminal. Cline seemed to not have problems in this area
+3.
