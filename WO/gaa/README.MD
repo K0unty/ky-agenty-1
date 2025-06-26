@@ -43,3 +43,5 @@ Your bun method
 bun install -g @google/gemini-cli
 gemini
 ```
+
+- In vscode its very bad, slow and is asking for paid tier
