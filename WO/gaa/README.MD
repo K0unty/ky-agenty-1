@@ -40,5 +40,6 @@ gemini
 Your bun method
 
 ```sh
-
+bun install -g @google/gemini-cli
+gemini
 ```
