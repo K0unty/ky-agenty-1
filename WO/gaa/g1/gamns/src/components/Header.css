@@ -28,3 +28,18 @@
   text-decoration: none;
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .header nav ul li {
+    margin: 0.5rem 0;
+  }
+}

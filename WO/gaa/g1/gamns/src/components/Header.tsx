@@ -1,9 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Header.css';
 
 const Header: React.FC = () => {
   return (
-    <header className="header">
+    <motion.header
+      className="header"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="logo">
         <h1>Fetish Couture</h1>
       </div>
@@ -15,7 +21,7 @@ const Header: React.FC = () => {
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
