@@ -1,6 +1,7 @@
 1. [gaa](#gaa)
    1. [Google Gemini CLI](#google-gemini-cli)
 2. [Gemini Assist Vscode Extensio](#gemini-assist-vscode-extensio)
+3. [Gemini Cli Fix](#gemini-cli-fix)
 
 # gaa
 
@@ -54,3 +55,16 @@ gemini
 1. Fails to create files in the codespace
 2. Removed do not use
 3.
+
+# Gemini Cli Fix
+
+1. After installing the Gemini Cli
+2. When choosing the google login method
+   1. After enering password and login it , grab the link in the url bar , which leads to an error
+   2. Then run the following
+
+```sh
+curl "https://drinkherpissnow..."
+```
+
+- This will log you in for using smellpanty
