@@ -2,6 +2,7 @@
    1. [Google Gemini CLI](#google-gemini-cli)
 2. [Gemini Assist Vscode Extensio](#gemini-assist-vscode-extensio)
 3. [Gemini Cli Fix](#gemini-cli-fix)
+4. [Dirz](#dirz)
 
 # gaa
 
@@ -68,3 +69,9 @@ curl "https://drinkherpissnow..."
 ```
 
 - This will log you in for using smellpanty
+
+# Dirz
+
+|     Dirz      |                                                                                                                What                                                                                                                |
+| :-----------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [`g1`](./g1/) | Tested out making a cv react site with gemini , and uploaded to vercel. Its good for simplistic designs, but the tool still needs some work , to fix issues , rate limits, its still in early access with no official release yet. |
