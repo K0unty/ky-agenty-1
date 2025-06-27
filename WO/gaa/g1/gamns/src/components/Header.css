@@ -2,14 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #000;
-  color: #fff;
+  padding: 1.5rem 3rem;
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+  border-bottom: 1px solid #c70039;
 }
 
 .logo h1 {
   margin: 0;
   font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #c70039;
 }
 
 .header nav ul {
@@ -20,23 +24,35 @@
 }
 
 .header nav ul li {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 
 .header nav ul li a {
-  color: #fff;
+  color: #f4f4f4;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  color: #c70039;
 }
 
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.8rem;
   }
 
   .header nav ul {
     flex-direction: column;
     margin-top: 1rem;
+    align-items: center;
   }
 
   .header nav ul li {
